@@ -30,3 +30,10 @@ div {
 }
 
 /*** Your code here ***/
+
+@media (min-width: 500px) {
+    div {
+        display: inline-block;
+        width: 44%;
+    }
+}
