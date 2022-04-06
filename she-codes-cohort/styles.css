@@ -1,3 +1,5 @@
+/* remember you may have a different way of solving the same problem - that's ok! */
+
 html {
     background: #F7F7F7;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,17 +15,36 @@ header {
     border-bottom: 1px solid #e9e6e6;
     height: 40px;
     padding: 0 5px;
-    border: 3px solid red;
 }
 
 nav, h1 {
     display: inline;
 }
 
+h1 {
+    color:  #C70039;
+}
+
 nav {
     float: right;
     height: 100%;
-    border: 3px solid blue;
+}
+
+nav a {
+    padding: 0 10px;
+    display: inline-block;
+    height: 100%;
+    /* line-height helps our nav anchor tags sit in the centre of the nav*/
+    line-height: 2.5rem;
+    color: #4e4e4e;   
+}
+
+/* here we are targeting only on hover */
+nav a:hover {
+    background-color: #C70039;
+    color: #fff;
+      /* cursor pointer means the mouse will look like a pointer when it hovers over */
+    cursor: pointer;
 }
 
 .selected {
@@ -52,12 +73,17 @@ section {
     width: 26%;
     padding: 10px;
     display: inline-block;
-    /* vertical-align: middle; */
+    /* vertical align helps align the content in the card a bit more evenly in the centre vertically */
+    vertical-align: middle;
     margin: 0 5px 20px;
-    height: 375px;
+    height: 400px;
     text-align: left;
     box-shadow: 0px 0px 10px blue;
     background-color: #fff;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #bebdbd;
 }
 
 .card img {
@@ -71,11 +97,37 @@ section {
     display: inline-block;
 }
 
-nav,
-h1 {
-    display: inline;
+.card .sub-card-heading {
+    color: #bebdbd;
 }
 
-h1 {
-    color:  #C70039;
+
+.card a {
+    line-height: 1.5rem;
+    display: block;
+    color: #C70039;
+}
+
+.card p {
+    color: #4e4e4e;
+}
+
+.card a,
+.card p {
+    font-size: 0.6rem;
+}
+
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    height: 40px;
+    padding: 0 5px;
+    line-height: 1.5rem;
+}
+
+footer p {
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
 }

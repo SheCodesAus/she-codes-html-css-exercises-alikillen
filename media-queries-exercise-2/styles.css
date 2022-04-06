@@ -12,20 +12,25 @@ header {
 }
 
 h2 {
+    margin: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #5e7992;
     color: #fff;
+    padding: 20px;
+    text-align: center;
     font-size: 1rem;
 }
 
 p {
+    text-align: justify;
 }
 
 form {
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 20px;
 }
 
 label {
@@ -34,18 +39,25 @@ label {
 }
 
 input {
+    display: block;
+    width: 100%;
     box-sizing: border-box;
+    margin-top: 5px;
+    padding: 5px;
     border: 1px solid #ebeeef;
     background-color: #f9fafa;
 }
 
 .form-item {
+    margin: 20px 0;
 }
 
 button {
     background-color: #00d982;
     border: none;
     color: #fff;
+    width: 100%;
+    padding: 15px;
 }
 
 input,
@@ -54,3 +66,28 @@ button {
     border-radius: 2px;
 }
 
+@media (min-width: 600px) {
+    .row .form-item {
+        display: inline-block;
+        width: calc(50% - 5px);
+    }
+    .form-item {
+        text-align: left;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 0;
+    }
+    header,
+    #form-wrapper {
+        display: inline-block;
+        width: calc(50% - 25px);
+        vertical-align: middle;
+        margin: 10px;
+    }
+    main {
+        text-align: center;
+    }
+}

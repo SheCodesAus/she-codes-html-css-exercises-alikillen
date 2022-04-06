@@ -31,9 +31,98 @@ div {
 
 /*** Your code here ***/
 
-@media (min-width: 500px) {
+/* challenge */
+/* Let’s adapt this so for screens 500px wide or larger, we see two divs per row.
+
+uncomment the query below to see the result.
+
+*/
+
+/* @media (min-width: 500px) {
     div {
         display: inline-block;
         width: 44%;
     }
+} */
+
+/* challenge */
+/* Add another media query to show 4 divs in one row for screens of 900px wide and above.
+
+Change the font size at each breakpoint.
+
+Change the colour of the divs so each row has the some colour divs at each breakpoint.
+
+
+*/
+
+
+
+@media (min-width: 500px) {
+    div {
+        display: inline-block;
+        width: 44%;
+        font-size: 1.5rem;
+    }
+    #div-1,
+    #div-2 {
+        background-color: #9370db;
+    }
+    #div-3,
+    #div-4 {
+        background-color: #6495ed;
+    }
 }
+
+@media (min-width: 900px) {
+    div {
+        width: 22%;
+        font-size: 1rem;
+    }
+    #div-3,
+    #div-4 {
+        background-color: #9370db;
+    }
+}
+
+
+
+ /* last challenge in slides- Try changing the media queries from min to max queries, and order them largest to smallest.
+What changes?
+ */
+ 
+/* in this case, until screen is 500px, the second query applies (div 1 and 2 are purple, div 3 and 4 are blue)
+when the screen is between 500 and 900px, div 1 and 2 have their default colours applied, but 3 and 4 are purple as specified by query 1
+
+when the screen is above 900px, all divs are as the original css specifies - no queries apply
+
+uncomment the two queries below to see the result.
+
+*/
+
+/* @media (max-width: 900px) {
+    div {
+        width: 22%;
+        font-size: 1rem;
+    }
+    #div-3,
+    #div-4 {
+        background-color: #9370db;
+    }
+}
+
+@media (max-width: 500px) {
+    div {
+        display: inline-block;
+        width: 44%;
+        font-size: 1.5rem;
+    }
+    #div-1,
+    #div-2 {
+        background-color: #9370db;
+    }
+    #div-3,
+    #div-4 {
+        background-color: #6495ed;
+    }
+} */
+
