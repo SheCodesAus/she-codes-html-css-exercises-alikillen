@@ -13,6 +13,13 @@ body {
     font-size: 1rem;
     font-weight: bold;
     height: calc(100% - 14px);
+    display: flex;
+    /* horizontal alignment */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* vertical alignment */
+    align-content: center;
+
 }
 
 div {
@@ -21,3 +28,37 @@ div {
 }
 
 /*** Your code here ***/
+
+/* 
+.demo-div {
+    flex-grow: 1;
+} */
+
+
+/* default order is 0 in html - let's mess with it */
+
+/* remember - order doesnt change our html structure */
+
+/* order is super helpful at scale for retrieving data from databases and displaying it correctly */
+#div-5 {
+    order: -1;
+    background-color: green;
+}
+
+#div-6 {
+    flex-grow: 2;
+    order: 1;
+}
+
+#div-1 {
+    flex-basis: 20%;
+    order: 2;
+}
+
+#div-2 {
+    flex-basis: 100px;
+    order: 3;
+}
+
+
+
